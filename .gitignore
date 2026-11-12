@@ -1,0 +1,26 @@
+# environments and builds
+.venv/
+__pycache__/
+*.egg-info/
+bin/
+
+# macOS / exFAT sidecars
+.DS_Store
+._*
+
+# never commit media, models or job output
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.m4a
+*.prproj
+*.prin
+*.bin
+*.docx
+jobs/
+work/
+output/
+
+# Adobe's export preset is copied from the local Premiere install, not committed
+presets/*.epr

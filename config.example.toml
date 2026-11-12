@@ -1,0 +1,20 @@
+# Copy to ~/.config/pcb/config.toml and adjust. Every key is optional.
+
+# Jobs, outputs, the queue and the Whisper model live here. Use a disk you trust with large files.
+work_dir = "~/pcb-work"
+
+premiere_app = "Adobe Premiere Pro 2027"
+premiere_bundle_id = "com.adobe.PremierePro.27"
+
+whisper_bin = "whisper-cli"
+whisper_model = "~/pcb-work/models/ggml-base.en-q5_1.bin"
+
+# a build appears this many seconds before its words are spoken
+lead_seconds = 0.15
+# silence inserted between consecutive voiceover files
+audio_gap_seconds = 0.3
+# hold after the last spoken word
+tail_seconds = 1.0
+
+# away-only queue: also treat "idle for N minutes" as away (0 = only screen lock / display sleep)
+idle_minutes = 0
